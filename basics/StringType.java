@@ -1,9 +1,12 @@
 public class StringType {
     public static void main(String[] args) {
-        // literals
+        // Using literals
         String message = "hello world";
-
         System.out.println(message);
+
+        // Using class constructor
+        String userName = new String("johndow");
+        System.out.println(userName);
 
         // Concatenation
         String a = "Hello";

@@ -20,7 +20,7 @@ public class FirstArray {
          */
         nums = new int[5]; // creating an array of 5 contiguous int places and storing reference to nums
 
-        System.out.println(nums); // printing out the type [I for int array and identity hash code
+        System.out.println(nums); // printing out the type ([I for int array) and identity hash code
 
         System.out.printf("Array has %d elements\n", nums.length); // getting length, unlike C, java stores the length
         // as an attribute

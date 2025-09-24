@@ -9,10 +9,10 @@ public class Indexing {
         // indexing using [] notation
         System.out.printf("third element is %d\n", nums[2]);
 
-        // accessing index out of range (Compiler does not error)
+        // accessing index out of range (No compilation error)
         // System.out.printf("100th element is %d\n", nums[99]);
 
-        // chaning array elements
+        // modifying array elements
         nums[3] = 40000;
 
         System.out.printf("fourth element is %d\n", nums[3]);
@@ -28,7 +28,7 @@ public class Indexing {
         printArray(marks);
 
         // now we are performing an in-place modification
-        // it doesn't create a new array rather modifies the original one
+        // it doesn't create a new array, rather modifies the original one
         // This is also known as mapping a function onto an array
         // But this is in-place mapping as original gets mutated
         doubleEvery(marks);
