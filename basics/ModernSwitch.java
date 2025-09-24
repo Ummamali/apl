@@ -13,5 +13,14 @@ public class ModernSwitch {
             case 'y', 'Y' -> System.out.println("Accepted");
             default -> System.out.println("Not Accepted");
         }
+
+        int day = 1;
+
+        String dayName = switch (day) {
+            case 1 -> "Monday";
+            default -> "Unknown";
+        };
+
+        System.out.println(dayName);
     }
 }
