@@ -4,6 +4,21 @@ import java.util.Scanner;
 public class Utils {
     // This class contains utilities for doing useful stuff
 
+    // prints out array from [p...q]
+    public static void printSubArray(int[] arr, int p, int q) {
+        System.out.print("{");
+
+        for (int i = p; i < q + 1; i++) {
+            System.out.print(arr[i]);
+
+            if (i < q) {
+                System.out.print(", ");
+            }
+        }
+
+        System.out.print("}\n");
+    }
+
     public static void printArray(int[] arr) {
         System.out.print("{");
 
