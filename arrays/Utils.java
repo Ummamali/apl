@@ -1,4 +1,9 @@
+import java.io.IOException;
+import java.util.Scanner;
+
 public class Utils {
+    // This class contains utilities for doing useful stuff
+
     public static void printArray(int[] arr) {
         System.out.print("{");
 
@@ -11,5 +16,26 @@ public class Utils {
         }
 
         System.out.print("}\n");
+    }
+
+    // Interface
+    public static void clearScreen() {
+        try {
+            if (System.getProperty("os.name").contains("Windows")) {
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            } else {
+                new ProcessBuilder("clear").inheritIO().start().waitFor();
+            }
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void waitEnter(Scanner input) {
+        if (input.hasNextLine()) {
+            input.nextLine();
+        }
+        System.out.println("Press Enter to continue...");
+        input.nextLine();
     }
 }
