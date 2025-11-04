@@ -49,6 +49,8 @@ Defining custom interfaces and implementing them with underlying data structures
 
 ### Dynamic Sequence
 
+Implementation: _arrays/DynamicSequence.java_
+
 - Get Size `int getSize()`
 - Get Length: `int getCount()`
 - Insert at Index `void insertAt(int item, int idx)`
@@ -73,3 +75,21 @@ Defining custom interfaces and implementing them with underlying data structures
 - Peek Operation `int peek()`
 - Print Queue `void print()`
 - Debug Backend Array `void debug()`
+
+### Matrix
+
+Implementation: _matrices/Matrix.java_
+
+- Print Matrix `void print()`
+- Get Element at Position `int getAt(int r, int c)`
+- Set Element at Position `void setAt(int r, int c, int item)`
+- Swap Items by Location `void swapItems(int[] indexOne, int[] indexTwo)`
+- Populate Rows `void populateRow(int[] rItems, int row)`
+- Populate Columns `void populateColumn(int[] cItems, int column)`
+- Populate Matrix (1 to n) `void populate()`
+- Swap Columns `void swapColumns(int colOne, int colTwo)`
+- Swap Rows `void swapRows(int rowOne, int rowTwo)`
+- Get Diagonal `int[] getDiagonal()`
+- Get Reverse Diagonal `int[] getReverseDiagonal()`
+- Get Maximum Value (occurance indices) `int[] getMax()`
+- Get Minimum Value (occurance indices) `int[] getMin()`
